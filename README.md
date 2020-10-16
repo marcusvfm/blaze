@@ -1,2 +1,2 @@
-# blaze
-Layout para agência desenvolvido em HTML, CSS, jQuery e Bootstrap.
+# BlazeFox
+Layout responsivo para agências desenvolvido em HTML, CSS, jQuery e Bootstrap.
