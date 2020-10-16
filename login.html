@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BlazeFox - Sobre nós</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/carousel.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_mask">
+            <div class="container">
+                <div class="header_sup_nav">
+                    <a href="#" title="Área do Cliente"><i class="fa fa-user"></i> Área do Cliente</a> |
+                    <a href="#" title="Contato"><i class="fa fa-inbox"></i> Contato</a>
+                    <span>
+                        <i class="fa fa-whatsapp"></i> <a href="#" title="WhatsApp de BlazeFox">(99) 99999-9999</a> -
+                        <a href="#" title="WhatsApp de BlazeFox">(99) 99999-9999</a>
+                    </span>
+                </div>
+                <div class="header_content">
+                    <div class="header_logo">
+                        <img src="images/logo.png" title="Agência BlazeFox" alt="Agência BlazeFox" />
+                    </div>
+                    <div class="header_nav_mobile">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <nav class="header_nav">
+                        <ul>
+                            <li><a href="#" title="Início">Início</a></li>
+                            <li><a href="#" title="Serviços">Serviços</a></li>
+                            <li><a href="#" title="Sobre">Sobre</a></li>
+                            <li><a href="#" title="Faq">Faq</a></li>
+                            <li><a href="#" title="Blog">Blog</a></li>
+                            <li><a href="#" title="Contato">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <article class="header_presentation text-center" style="padding-bottom: 100px;">
+                    <h1>Sobre nós</h1>
+                    <p class="tagline">Conheça a empresa que vai te levar ao sucesso!</p>
+                </article>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article class="main_login container">
+            <form>
+                <label>
+                    <p><i class="fa fa-envelope"></i> E-mail:</p>
+                    <input type="email" placeholder="Digite seu e-mail"/>
+                </label>
+
+                <label>
+                    <p><i class="fa fa-lock"></i> Senha:</p>
+                    <input type="password" placeholder="Digite sua senha"/>
+                    <span><a href="#">Esqueceu a senha?</a></span>
+                </label>
+                <label class="check">
+                    <input type="checkbox" />
+                    <span>Lembrar dados?</span>
+                </label>
+                <button>Entrar</button>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <section class="footer_nav">
+            <div class="container footer_nav_content">
+                <article class="footer_nav_item">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#" title="Serviços">Serviços</a></li>
+                        <li><a href="#" title="Sobre">Sobre</a></li>
+                        <li><a href="#" title="Faq">Faq</a></li>
+                        <li><a href="#" title="Contato">Contato</a></li>
+                        <li><a href="#" title="Serviços especiais">Serviços especiais</a></li>
+                        <li><a href="#" title="Blog">Blog</a></li>
+                    </ul>
+                </article>
+                <article class="footer_nav_item">
+                    <h3>Newsletter</h3>
+                    <form class="footer_nav_newsletter">
+                        <input type="text" placeholder="Seu nome" />
+                        <input type="email" placeholder="Seu e-mail" />
+                        <button type="submit">Receber ofertas</button>
+                    </form>
+                </article>
+                <article class="footer_nav_item">
+                    <img src="images/logo2.png" title="Agência BlazeFox" alt="Agência BlazeFox" />
+                </article>
+            </div>
+        </section>
+        <div class="footer_text">
+            <div class="container footer_text_content">
+                <div class="footer_text_left">
+                    &copy; BlazeFox 2020 - CNPJ: 00.000.000/0000-00
+                </div>
+                <div class="footer_text_right">
+                    "Sonhos sem planejamento, são apenas desejos."
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('#carousel-depositions').on('slide.bs.carousel', function(e) {
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 3;
+            var totalItems = $('.product-depositions').length;
+            if (idx >= totalItems - (itemsPerSlide - 1)) {
+                var it = itemsPerSlide - (totalItems - idx);
+                for (var i = 0; i < it; i++) {
+                    if (e.direction == "left") {
+                        $('.product-depositions').eq(i).appendTo('.carousel-inner-depositions');
+                    } else {
+                        $(".product-depositions").eq(0).appendTo(".carousel-inner-depositions");
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

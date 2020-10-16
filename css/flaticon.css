@@ -1,0 +1,53 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 09/01/2020 21:45
+  	*/
+	
+	@font-face {
+	    font-family: "Flaticon";
+	    src: url("../fonts/Flaticon.eot");
+	    src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/Flaticon.woff2") format("woff2"), url("../fonts/Flaticon.woff") format("woff"), url("../fonts/Flaticon.ttf") format("truetype"), url("../fonts/Flaticon.svg#Flaticon") format("svg");
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    @font-face {
+	        font-family: "Flaticon";
+	        src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+	    }
+	}
+	
+	[class^="flaticon-"]:before,
+	[class*=" flaticon-"]:before,
+	[class^="flaticon-"]:after,
+	[class*=" flaticon-"]:after {
+	    font-family: Flaticon;
+	    font-size: 5em;
+	    font-style: normal;
+	    margin-left: 20px;
+	}
+	
+	.flaticon-ad:before {
+	    content: "\f100";
+	}
+	
+	.flaticon-www:before {
+	    content: "\f101";
+	}
+	
+	.flaticon-pie-chart:before {
+	    content: "\f102";
+	}
+	
+	.flaticon-seo-and-web:before {
+	    content: "\f103";
+	}
+	
+	.flaticon-wrench:before {
+	    content: "\f104";
+	}
+	
+	.flaticon-seo-and-web-1:before {
+	    content: "\f105";
+	}
